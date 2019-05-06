@@ -35,11 +35,28 @@ int main(void)
 
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE); // get keys for window
 
+	float pos[6] = { -.5f, -.5f,
+					  .0f, .5f, 
+					  .5f, -.5f };
+
+	//creating vertex buffer
+	unsigned int buffer;
+	glGenBuffers(1, &buffer); //create 1 buffer
+	glBindBuffer(GL_ARRAY_BUFFER, buffer); //now array of buffers BOUND TO THE "STATE MACHINE"
+	glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(float), pos, GL_STATIC_DRAW);
+	
+	//index buffer? later; shaders
+
+	//Loop
 	do {
 		
 		glClear(GL_COLOR_BUFFER_BIT); //clear screen
 
-		//drwa trigangle
+		glDrawArrays(GL_TRIANGLES, 0, 3);
+		//glDrawElements(GL_TRINAGLES, 3,)
+
+		/* OLD TRIANGLE
+		//draw trigangle
 		glBegin(GL_TRIANGLES);
 		glVertex2f(-.5f, -.5f);
 		glVertex2f(.0f, .5f);
@@ -49,34 +66,11 @@ int main(void)
 		//swap buffer then poll
 		glfwSwapBuffers(window);
 		glfwPollEvents();
-
+		*/
 	} 
 	while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(window) == 0); //close on escape
 
-	/* OLD LOOP no input
-	/* Loop until the user closes the window 
-	while (!glfwWindowShouldClose(window))
-	{
-		/* Render here 
-		glClear(GL_COLOR_BUFFER_BIT);
 
-		
-		//creates a triangle
-		glBegin(GL_TRIANGLES);
-		glVertex2f(-.5f,-.5f);
-		glVertex2f(.0f, .5f);
-		glVertex2f(.5f, -.5f);
-		glEnd();
-		
 
-		/* Swap front and back buffers 
-		glfwSwapBuffers(window);
-
-		/* Poll for and process events
-		glfwPollEvents();
-	}
-
-	
-	glfwTerminate();*/	
 	return 0;
 }
