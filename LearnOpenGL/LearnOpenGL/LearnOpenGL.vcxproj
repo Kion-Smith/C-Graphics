@@ -92,7 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLAD\include\;$(SolutionDir)Dependencies\KHR\include\;$(SolutionDir)Dependencies\GLFW\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLAD\include\;$(SolutionDir)Dependencies\KHR\include\;$(SolutionDir)Dependencies\GLM\include\;$(SolutionDir)Dependencies\GLFW\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -109,7 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLAD\include\;$(SolutionDir)Dependencies\KHR\include\;$(SolutionDir)Dependencies\GLFW\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLAD\include\;$(SolutionDir)Dependencies\KHR\include\;$(SolutionDir)Dependencies\GLM\include\;$(SolutionDir)Dependencies\GLFW\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,7 +126,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLAD\include\;$(SolutionDir)Dependencies\KHR\include\;$(SolutionDir)Dependencies\GLFW\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLAD\include\;$(SolutionDir)Dependencies\KHR\include\;$(SolutionDir)Dependencies\GLM\include\;$(SolutionDir)Dependencies\GLFW\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,7 +143,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLAD\include\;$(SolutionDir)Dependencies\KHR\include\;$(SolutionDir)Dependencies\GLFW\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLAD\include\;$(SolutionDir)Dependencies\KHR\include\;$(SolutionDir)Dependencies\GLM\include\;$(SolutionDir)Dependencies\GLFW\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -156,9 +156,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Application.cpp" />
-    <ClCompile Include="src\Chapters\Chapter5.cpp" />
-    <ClCompile Include="src\Chapters\Chapter6.cpp" />
-    <ClCompile Include="src\Chapters\Chapter7.cpp" />
+    <ClCompile Include="src\Chapters\Chapter5.h" />
+    <ClCompile Include="src\Chapters\Chapter6.h" />
+    <ClCompile Include="src\Chapters\Chapter7.h" />
+    <ClCompile Include="src\OpenglUtils.cpp" />
     <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\vendor\GLAD\glad.c" />
     <ClCompile Include="src\vendor\std_image\stb_image.cpp" />
@@ -173,9 +174,17 @@
     <None Include="res\shaders\chapter6\Offset\offset_v.shader" />
     <None Include="res\shaders\chapter7\fshader.shader" />
     <None Include="res\shaders\chapter7\vshader.shader" />
+    <None Include="res\shaders\chapter8\fshader.shader" />
+    <None Include="res\shaders\chapter8\Q1\fshader.shader" />
+    <None Include="res\shaders\chapter8\Q1\vshader.shader" />
+    <None Include="res\shaders\chapter8\vshader.shader" />
+    <None Include="res\shaders\chapter9\fshader.shader" />
+    <None Include="res\shaders\chapter9\vshader.shader" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\Chapters\Chapter9.h" />
+    <ClInclude Include="src\OpenglUtils.h" />
+    <ClInclude Include="src\Chapters\Chapter8.h" />
     <ClInclude Include="src\Shader.h" />
     <ClInclude Include="src\vendor\std_image\stb_image.h" />
   </ItemGroup>

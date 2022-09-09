@@ -1,1 +1,25 @@
-﻿
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(499,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(500,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Application.cpp
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter6.h(226,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter6.h(425,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter8.h(3,1): warning C4005: 'CHAPTER_NAME': macro redefinition
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter7.h(3): message : see previous definition of 'CHAPTER_NAME'
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter8.h(345,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter9.h(3,1): warning C4005: 'CHAPTER_NAME': macro redefinition
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter8.h(3): message : see previous definition of 'CHAPTER_NAME'
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter9.h(60,25): warning C4101: 'ebo': unreferenced local variable
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter9.h(218,25): warning C4101: 'ebo': unreferenced local variable
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter9.h(376,25): warning C4101: 'ebo': unreferenced local variable
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter9.h(531,25): warning C4101: 'ebo': unreferenced local variable
+  Chapter5.h
+  Chapter6.h
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter6.h(226,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\dev\C++\Graphics\LearnOpenGL\LearnOpenGL\src\Chapters\Chapter6.h(425,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Chapter7.h
+  OpenglUtils.cpp
+  Shader.cpp
+  stb_image.cpp
+  Generating Code...
+  glad.c
+  LearnOpenGL.vcxproj -> C:\dev\C++\Graphics\LearnOpenGL\bin\Output\x64\Debug\LearnOpenGL.exe

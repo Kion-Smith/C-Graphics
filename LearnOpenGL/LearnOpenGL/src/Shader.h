@@ -22,7 +22,8 @@ public:
 	//set uniforms
 	void setBool(const std::string& name, bool value);
 	void setInt(const std::string& name, int value);
-	void setFloat(const std::string& name, float value) ;
+	void setFloat(const std::string& name, float value);
+	void setMatrix4f(const std::string& name, int matrixCount, int shouldTranspose, GLfloat* value_ptr);
 
 	~Shader();
 
